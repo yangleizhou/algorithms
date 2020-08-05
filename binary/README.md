@@ -74,7 +74,7 @@
     -3 的绝对值的补数为：16 - 3 = 13
 
     13 已经用于表示正数的 13 了，现在又要用来表示负数的 -3，这就产生了混淆。  
-    ![binary_1](https://github.com/yangleizhou/algorithms/raw/master/binary/binary_1.webp)  
+    ![binary_1](https://github.com/yangleizhou/algorithms/blob/master/binary/binary_1.webp)  
     4 字长的二进制表示的正数与负数的范围，即正数的范围：[0 ~ 7]，负数的范围：[-8 ~ -1]，负数和正数整好各占一半。
     溢出临界区和进位临界区了。例如：7 + 1 = 8 ，可以从上图中看到， 7 顺时针的下一位是 -8，而正确答案应该是 8，所以发生了溢出。再有：-1 + 1 = 0 ，从上图中看到， -1 顺时针的下一位为 0，且正确答案正好为 0，所以发生了进位.  
     ![binary_2](./binary_2.webp)  
