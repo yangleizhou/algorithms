@@ -5,6 +5,13 @@ import (
 	"testing"
 )
 
+func TestParity(t *testing.T) {
+	parity(10)
+	parity(1)
+	parity(0)
+	parity(3)
+}
+
 func TestConvertLow(t *testing.T) {
 	var str = []byte{'A', 'B', 'C', 'E', 'F', 'G', 'd', 'g', 'h'}
 	fmt.Println("source =  ", string(str))

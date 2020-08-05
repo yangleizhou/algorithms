@@ -2,6 +2,15 @@ package binary
 
 import "fmt"
 
+// 判断一个数的奇偶性 `n & 1`
+func parity(x int) {
+	if (x & 1) == 0 {
+		fmt.Printf("%d 是偶数\n", x)
+	} else {
+		fmt.Printf("%d 是奇数\n", x)
+	}
+}
+
 // 利用或操作 | 和空格将英文字符转换为小写
 func convertLower(strArr []byte) {
 	for index, str := range strArr {
