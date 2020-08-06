@@ -65,6 +65,7 @@ func isPowerOf2(x int) bool {
 }
 
 // 位移实现 `>>` 或 n & (n-1) 计算汉明权重
+// n & (n-1) 去掉最后一位
 func hammingWeight(x, y uint32) {
 	// 使用 >>
 	res := uint32(0)
@@ -81,4 +82,14 @@ func hammingWeight(x, y uint32) {
 		res++
 	}
 	fmt.Println(res)
+}
+
+// 利用 a ^ a = 0 ^ b = b
+// 找到非空整型数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素
+func singleNumber(data ...int) int {
+	var result int
+	for _, v := range data {
+		result = result ^ v
+	}
+	return result
 }
