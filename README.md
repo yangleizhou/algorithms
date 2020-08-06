@@ -1,13 +1,13 @@
 # algorithms
 数据结构与算法
 
-http://dongxicheng.org/category/structure/
-https://zhuanlan.zhihu.com/p/67490380
-https://www.jianshu.com/p/30fdd6faea79
-https://github.com/labuladong/fucking-algorithm.git
-https://github.com/greyireland/algorithm-pattern.git
-https://github.com/nonstriater/Learn-Algorithms.git
-https://github.com/jiajunhua/wangzheng0822-algo.git
+http://dongxicheng.org/category/structure/  
+https://zhuanlan.zhihu.com/p/67490380  
+https://www.jianshu.com/p/30fdd6faea79  
+https://github.com/labuladong/fucking-algorithm.git  
+https://github.com/greyireland/algorithm-pattern.git  
+https://github.com/nonstriater/Learn-Algorithms.git  
+https://github.com/jiajunhua/wangzheng0822-algo.git  
 
 ## 位操作
 

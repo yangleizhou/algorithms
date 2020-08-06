@@ -51,11 +51,11 @@ func TestIsPowerOf2(t *testing.T) {
 	}
 }
 
+func TestSingleNumber(t *testing.T) {
+	fmt.Println(singleNumber(15, 6, 6, 9, 9, 10, 10, 20, 20))
+}
+
 func TestHammingWeight(t *testing.T) {
 	hammingWeight(0B1001, 0B10111)
 	hammingWeight(0B0, 0B10111)
-}
-
-func TestSingleNumber(t *testing.T) {
-	fmt.Println(singleNumber(15, 6, 6, 9, 9, 10, 10, 10, 20, 20))
 }
