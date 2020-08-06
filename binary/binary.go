@@ -56,6 +56,16 @@ func swap(x, y int) {
 	fmt.Println(x, y)
 }
 
+// n & (n-1) 利用 n & (n- 1) 移除最后一个1
+func removeLast1(x int) int {
+	return x & (x - 1)
+}
+
+// 利用 (n & (n- 1))^n 获取最后一个1
+func getLast1(x int) int {
+	return (x & (x - 1)) ^ x
+}
+
 // 利用`n & (n-1)`判断一个整数是不是2的指数
 func isPowerOf2(x int) bool {
 	if x <= 0 {
@@ -90,6 +100,23 @@ func singleNumber(data ...int) int {
 	var result int
 	for _, v := range data {
 		result = result ^ v
+	}
+	return result
+}
+
+// 统计各个数各位上1的数量 在%n
+// 找到非空整型数组，除了某个元素只出现一次以外，其余每个元素均出现n次。找出那个只出现了一次的元素
+func singleNumber2(n int, data []int) int {
+	if n <= 1 {
+		return 0
+	}
+	var result int
+	for i := 0; i < 64; i++ {
+		sumbit := 0
+		for j := 0; j < len(data); j++ {
+			sumbit += (data[j] >> i) & 1
+		}
+		result ^= (sumbit % n) << i
 	}
 	return result
 }
