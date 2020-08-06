@@ -79,6 +79,12 @@ func TestSingleNumber2(t *testing.T) {
 	fmt.Println(singleNumber2(4, []int{15, 6, 6, 6, 6, 10, 10, 10, 10, 20, 20, 20, 20}))
 }
 
+func TestSingleNumber3(t *testing.T) {
+	fmt.Println(singleNumber3([]int{17, 16, 18, 18, 19, 19, 1, 1}))
+	fmt.Println(singleNumber3([]int{-17, 16, 18, 18, 19, 19, 1, 1}))
+	fmt.Println(singleNumber3([]int{15, -17, 16, 18, 18, 19, 19, 1, 1}))
+}
+
 func TestHammingWeight(t *testing.T) {
 	hammingWeight(0B0, 0B10111)
 	hammingWeight(0B1001, 0B10111)

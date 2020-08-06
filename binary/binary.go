@@ -120,3 +120,29 @@ func singleNumber2(n int, data []int) int {
 	}
 	return result
 }
+
+// 利用 a^a=0^b=b 出现两次数 ^ = 0 最后f= a^b ;两数交换 f= a^b,a = f^b,b=f^a
+// f 最后一个1=g,g&a=0 g&b !=0 或者 g&a !=0 g&b=0
+// 给定一个整数数组，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素
+func singleNumber3(nums []int) []int {
+	// a=a^b
+	// b=a^b
+	// a=a^b
+	// 关键点怎么把a^b分成两部分,方案：可以通过diff最后一个1区分
+
+	diff := 0
+	for i := 0; i < len(nums); i++ {
+		diff ^= nums[i]
+	}
+	result := []int{diff, diff}
+	// 去掉末尾的1后异或diff就得到最后一个1的位置
+	diff = (diff & (diff - 1)) ^ diff
+	for i := 0; i < len(nums); i++ {
+		if diff&nums[i] == 0 {
+			result[0] ^= nums[i]
+		} else {
+			result[1] ^= nums[i]
+		}
+	}
+	return result
+}
