@@ -1,3 +1,6 @@
+
+# [201. Count Triplets](https://leetcode-cn.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/)
+
 1442. 形成两个异或相等数组的三元组数目
 给你一个整数数组 arr 。
 
