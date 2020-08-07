@@ -21,7 +21,7 @@
 
 - 排序
 	- 插入排序
-		- 直接插入排序(Insert Sort) O(n^2)
+		- 直接插入排序(Straight Insert Sort) O(n^2)
 		- 折半插入排序(Binary Insert Sort)
 		- 希尔排序(Shell Sort)
 
@@ -37,6 +37,8 @@
 	- 归并排序(Merge Sort) O(nlogn)
 
 	- 基数排序(Radix Sort) O(d(n+radix))
+
+	- 计数排序(Count Sort) O(n)
 
 	- 桶排序(Bucket Sort) O(nlogn)
 
