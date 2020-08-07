@@ -27,7 +27,7 @@
 
 	- 交换排序
 		- 冒泡排序(Bubble Sort) O(n^2)
-		- 快速排序(Quick Sort)?? O(nlogn)
+		- 快速排序(Quick Sort) O(nlogn)
 
 	- 选择排序
 		- 直接选择排序(Select Sort) O(n^2)
