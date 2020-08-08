@@ -19,7 +19,7 @@
 
 
 #### <i id="insertion"></i>插入排序  
-- [直接插入排序](./straight_insertion/)</br>
+- [直接插入排序](./straight_insertion)</br>
 - [折半插入排序](../binary_insertion)</br>
 - [希尔排序](../shell)</br>
 
