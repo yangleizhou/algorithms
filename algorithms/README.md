@@ -16,10 +16,20 @@
 
 4.算法是基于问题的，每种算法有它自己的问题背景。但是有时一种算法的思想能借鉴应用到另一个问题的解决方式中。算法的设计过程即是一个如何解题的过程。
 	
-## <i id="four"></i>算法  
+ ## <i id="four"></i>算法  
+
+- [排序](#sort)
+- [查找/搜索](#search)
+- [压缩](#compression)
+- [加密](#encrypt)
+- [最优解](#optimal_solution)
+- [并行](#parallel)
+- [机器学习](#machine_learing)
+
+
 
 按问题目标的类型划分
-- [排序](./sort)
+- <i id="sort"></i>[排序](./sort)
 	- [插入排序]()
 		- [直接插入排序](./sort/straight_insertion) 
 		- [折半插入排序](./sort/binary_insertion)
@@ -39,8 +49,8 @@
 	- [计数排序](./sort/counting) 
 	- [桶排序](./sort/bucket) 
 
-- 查找/搜索
 
+- <i id="search"></i>[查找/搜索](./search)
 	- 二分查找(Binary Search)
 
 	- 树型
@@ -49,7 +59,7 @@
 		- 并查集(Union-Find Set)
 
 	- 哈希(Hashing)
-	
+
 	- 最优化剪枝
 
 	- 可行性剪枝
@@ -64,10 +74,10 @@
 
 	- 启发式搜索(Heuristic Search)
 
-- 压缩
+- <i id="compression"></i>[压缩](./compression)
 	- 哈夫曼编码
 
-- 加密
+- <i id="encrypt"></i> [加密](./encrypt)
 	- 对称加密
 		- AES
 		- DES
@@ -76,7 +86,7 @@
 		- RSA
 		- IDEA
 
-- 最优解
+- <i id="optimal_solution"></i>[最优解](./optimal_solution)
 	- 递推
 	- 递归(Recursion)
 	- 贪心算法(Greedy)
@@ -86,10 +96,10 @@
 	- 模拟退火法
 	- 遗传算法
 
-- 并行
+- <i  id="parallel"></i>[并行](./parallel)
 	
 
-- 机器学习
+- <i id=""></i>[机器学习](./machine_learing)
 	- 回归算法
 		- 最小二乘法(Ordinary Least Square)
 		- 逻辑回归(Logistic Regression)
