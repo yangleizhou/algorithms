@@ -30,7 +30,7 @@
 
 按问题目标的类型划分
 - <i id="sort"></i>[排序](./sort)
-	* <font size=3 color="green">插入排序</font>
+	* <font size=3 color="green">`插入排序`</font>
 		- [直接插入排序](./sort/straight_insertion) 
 		- [折半插入排序](./sort/binary_insertion)
 		- [希尔排序](./sort/shell) 

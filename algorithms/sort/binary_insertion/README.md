@@ -10,7 +10,7 @@
 3. 继续选取第3,4,....n个元素,重复步骤2。</br>
 
 - **`图解`**  
-![binary_insertion](../picture/binary_insertion.jpg)</br>
+![binary_insertion](./binary_insertion.jpg)</br>
 
 - **`要点`**  
 设立哨兵current,preIndex，作为临时存储和判断数组边界。

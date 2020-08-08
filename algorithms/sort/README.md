@@ -12,32 +12,32 @@
     - [归并排序](#merge)</br>
 
 - **`非比较类排序`**
-    - [计数排序](../counting)</br>
-    - [基数排序](../radix)</br>
-    - [桶排序](../bucket)</br>
+    - [计数排序](./counting)</br>
+    - [基数排序](./radix)</br>
+    - [桶排序](./bucket)</br>
 
 
 
 #### <i id="insertion"></i>插入排序  
 - [直接插入排序](./straight_insertion)</br>
-- [折半插入排序](../binary_insertion)</br>
-- [希尔排序](../shell)</br>
+- [折半插入排序](./binary_insertion)</br>
+- [希尔排序](./shell)</br>
 
 
 #### <i id="swap"></i>交换排序  
-- [冒号排序](../bubble)</br>
-- [快速排序](../quick)</br>
+- [冒号排序](./bubble)</br>
+- [快速排序](./quick)</br>
 
 
 #### <i id="selection"></i>选择排序  
-- [直接选择排序](../direct_selection)</br>
-- [锦标赛排序](../tournament)</br>
-- [堆排序](../heap)</br>
+- [直接选择排序](./direct_selection)</br>
+- [锦标赛排序](./tournament)</br>
+- [堆排序](./heap)</br>
 
 
 #### <i id="merge"></i>归并排序
-- [二路归并排序](../binary_merge)
-- [多路归并排序](../mul_merge)
+- [二路归并排序](./binary_merge)
+- [多路归并排序](./mul_merge)
 
 
 
