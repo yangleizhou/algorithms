@@ -30,18 +30,18 @@
 
 按问题目标的类型划分
 - <i id="sort"></i>[排序](./sort)
-	- [插入排序]()
+	* `插入排序`
 		- [直接插入排序](./sort/straight_insertion) 
 		- [折半插入排序](./sort/binary_insertion)
 		- [希尔排序](./sort/shell)
-	- [交换排序]()
+	- * `交换排序`
 		- [冒泡排序](./sort/shell) 
 		- [快速排序](./sort/quick) 
-	- [选择排序]()
+	- * `选择排序`
 		- [直接选择排序](./sort/direct_selection) 
 		- [锦标赛排序](./sort/tournament) 
 		- [堆排序](./sort/heap) 
-	- [归并排序]()
+	- * `归并排序`
 		- [二路归并排序](./sort/binary_merge)
 		- [多路归并排序](./sort/mul_merge)
 
