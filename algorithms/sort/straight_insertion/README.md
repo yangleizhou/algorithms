@@ -7,7 +7,10 @@
 1. 从数组第2个元素开始抽取元素。</br>
 2. 把它与左边第一个元素比较,如果左边第一个元素比它大，则继续与左边第二个元素比较下去,直到遇到不比它大的元素,然后插入这个元素的右边。</br>
 3. 继续选取第3,4,....n个元素,重复步骤2,选择适当的位置插入。</br>
-![straight_insertion](../picture/straight_insertion.gif)
+![straight_insertion](../picture/straight_insertion.gif)</br>
+
+- **`要点`**
+设立哨兵current,preIndex，作为临时存储和判断数组边界。
 
 - **`复杂度`**      
 O(n^2)  

@@ -21,26 +21,28 @@
 
 - [排序]()
 	- 插入排序
-		- 直接插入排序(Straight Insert Sort) O(n^2)
+		- 直接插入排序(Straight Insert Sort) 
 		- 折半插入排序(Binary Insert Sort)
 		- 希尔排序(Shell Sort)
 
 	- 交换排序
-		- 冒泡排序(Bubble Sort) O(n^2)
-		- 快速排序(Quick Sort) O(nlogn)
-
+		- 冒泡排序(Bubble Sort) 
+		- 快速排序(Quick Sort) 
+  
 	- 选择排序
-		- 直接选择排序(Select Sort) O(n^2)
-		- 锦标赛排序(Tournament Sort) O(nlogn)
-		- 堆排序(Heap Sort) O(nlogn)
+		- 直接选择排序(Select Sort) 
+		- 锦标赛排序(Tournament Sort) 
+		- 堆排序(Heap Sort) 
 
-	- 归并排序(Merge Sort) O(nlogn)
+	- 归并排序(Merge Sort)
+		- 二路归并排序(Binary Merge Sort)
+		- 多路归并排序(Mul Merge Sort)
 
-	- 基数排序(Radix Sort) O(d(n+radix))
+	- 基数排序(Radix Sort) 
 
-	- 计数排序(Count Sort) O(n)
+	- 计数排序(Count Sort) 
 
-	- 桶排序(Bucket Sort) O(nlogn)
+	- 桶排序(Bucket Sort) 
 
 - 查找/搜索
 

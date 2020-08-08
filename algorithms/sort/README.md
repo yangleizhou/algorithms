@@ -1,13 +1,21 @@
  排序
  =====
 
-- [插入排序](#insertion)</br>
-- [交换排序](#swap)</br>
-- [选择排序](#selection)</br>
-- [归并排序](#merge)</br>
-- [基数排序](#radix)</br>
-- [计数排序](#count)</br>
-- [桶排序](#bucket)</br>
+常见的排序算法可以分为两大类：</br>
+* `比较类排序`：通过比较来决定元素间的相对次序,由于其时间复杂度不能突破O(nlogn),因此也称为`非线性时间比较类排序`。
+* `非比较类排序`：不通过比较来决定元素间的相对次序,它可以突破基于比较排序的时间下界,以线性时间运行，因此也被称为`线性时间非比较类排序`。
+
+- 比较类排序
+    - [插入排序](#insertion)</br>
+    - [交换排序](#swap)</br>
+    - [选择排序](#selection)</br>
+    - [归并排序](#merge)</br>
+
+- 非比较类排序
+    - [计数排序](../count)</br>
+    - [基数排序](../radix)</br>
+    - [桶排序](../bucket)</br>
+
 
 
 #### <i id="insertion"></i>插入排序  
@@ -17,37 +25,19 @@
 
 
 #### <i id="swap"></i>交换排序  
-- [冒号排序](#bubble)</br>
-- [快速排序](#quick)</br>
+- [冒号排序](../bubble)</br>
+- [快速排序](../quick)</br>
 
 
 #### <i id="selection"></i>选择排序  
-- [直接选择排序](#direct_selection)</br>
-- [锦标赛排序](#tournament)</br>
-- [堆排序](#heap)</br>
+- [直接选择排序](../direct_selection)</br>
+- [锦标赛排序](../tournament)</br>
+- [堆排序](../heap)</br>
 
-
-#### <i id="binary_insert"></i>折半插入排序
-
-#### <i id="shell"></i>希尔排序
-
-
-#### <i id="bubble"></i>冒号排序
-
-
-#### <i id="quick"></i>快速排序
-
-#### <i id="direct_selection"></i>直接选择排序
-
-#### <i id="tournament"></i>锦标赛排序
-
-#### <i id="heap"></i>堆排序
 
 #### <i id="merge"></i>归并排序
+- [二路归并排序](../binary_merge)
+- [多路归并排序](../mul_merge)
 
-#### <i id="radix"></i>基数排序
 
 
-#### <i id="count"></i>计数排序
-
-#### <i id="bucket"></i>桶排序
