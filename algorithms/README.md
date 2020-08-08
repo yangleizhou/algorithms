@@ -43,7 +43,7 @@
 		- [直接选择排序](./sort/selection/direct_selection) 
 		- [锦标赛排序](./sort/selection/tournament) 
 		- [堆排序](./sort/selection/heap) 
-		- [树形选择](./sort/tree_selection)
+		- [树形选择](./sort/selection/tree_selection)
 	* `归并排序`
 		- [二路归并排序](./sort/merge/binary_merge)
 		- [多路归并排序](./sort/mege/mul_merge)

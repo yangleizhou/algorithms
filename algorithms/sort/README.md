@@ -16,13 +16,12 @@
     - [基数排序](./radix)</br>
     - [桶排序](./bucket)</br>
 
-
-
 #### <i id="insertion"></i>插入排序  
 - [直接插入排序](./insertion/straight_insertion)</br>
 - [折半插入排序](./insertion/binary_insertion)</br>
+- [2-路插入排序](./sort/selection/two-path_insertion)
+- [表插入排序](./sort/selection/table_insertion)
 - [希尔排序](./insertion/shell)</br>
-
 
 #### <i id="exchange"></i>交换排序  
 - [冒号排序](./exchange/bubble)</br>
@@ -33,6 +32,7 @@
 - [直接选择排序](./selection/direct_selection)</br>
 - [锦标赛排序](./selection/tournament)</br>
 - [堆排序](./selection/heap)</br>
+- [树形选择](./selection/tree_selection)
 
 
 #### <i id="merge"></i>归并排序
