@@ -51,7 +51,7 @@
 
 
 - <i id="search"></i>[查找/搜索](./search)
-	- 二分查找(Binary Search)
+	- [二分查找](./search/binary_search)
 
 	- 树型
 		- 二叉搜索树(Binary Search Tree)
