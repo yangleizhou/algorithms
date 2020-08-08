@@ -16,33 +16,29 @@
 
 4.算法是基于问题的，每种算法有它自己的问题背景。但是有时一种算法的思想能借鉴应用到另一个问题的解决方式中。算法的设计过程即是一个如何解题的过程。
 	
-## <i id="four"></i>算法
+## <i id="four"></i>算法  
+* 时间复杂度
+
 按问题目标的类型划分
+- [排序](./sort)
+	- [插入排序]()
+		- [直接插入排序](./sort/straight_insertion) 
+		- [折半插入排序](./sort/binary insertion)
+		- [希尔排序](Shell Sort)
+	- [交换排序]()
+		- [冒泡排序](Bubble Sort) 
+		- [快速排序](Quick Sort) 
+	- [选择排序]()
+		- [直接选择排序](Select Sort) 
+		- [锦标赛排序](Tournament Sort) 
+		- [堆排序](Heap Sort) 
+	- [归并排序](Merge Sort)
+		- [二路归并排序](Binary Merge Sort)
+		- [多路归并排序](Mul Merge Sort)
 
-- [排序]()
-	- 插入排序
-		- 直接插入排序(Straight Insert Sort) 
-		- 折半插入排序(Binary Insert Sort)
-		- 希尔排序(Shell Sort)
-
-	- 交换排序
-		- 冒泡排序(Bubble Sort) 
-		- 快速排序(Quick Sort) 
-  
-	- 选择排序
-		- 直接选择排序(Select Sort) 
-		- 锦标赛排序(Tournament Sort) 
-		- 堆排序(Heap Sort) 
-
-	- 归并排序(Merge Sort)
-		- 二路归并排序(Binary Merge Sort)
-		- 多路归并排序(Mul Merge Sort)
-
-	- 基数排序(Radix Sort) 
-
-	- 计数排序(Count Sort) 
-
-	- 桶排序(Bucket Sort) 
+	- [基数排序](Radix Sort) 
+	- [计数排序](Count Sort) 
+	- [桶排序](Bucket Sort) 
 
 - 查找/搜索
 
