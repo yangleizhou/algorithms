@@ -18,6 +18,6 @@
 - **`复杂度`**      
 O(n^2)  
 计算：
-1. `折半插入算法`比[直接插入排序算法](../straight_insertion)只是减少了比较次数,但元素的移动次数不变。
-2. `折半插入算法`排序执行了 n 次[二分查找](../../search/binary_search)次数,二分查找时间复杂度为logn,所以折半算法的时间复杂度比[直接插入排序算法](../straight_insertion)时间复杂度减少了 nlogn  
-3. space = O(n^2) - O(nlogn)
+1. `折半插入算法`排序执行了 n 次[二分查找](../../search/binary_search)次数,二分查找时间复杂度为logn,所以折半算法的时间复杂度比[直接插入排序算法](../straight_insertion)时间复杂度减少了 nlogn  
+2. space = O(n^2) - O(nlogn)
+3. `折半插入算法`比[直接插入排序算法](../straight_insertion)只是减少了比较次数,但元素的移动次数不变，时间复杂度O(n^2)。

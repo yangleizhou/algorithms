@@ -33,6 +33,8 @@
 	* <font size=3 color="green">`插入排序`</font>
 		- [直接插入排序](./sort/selection/straight_insertion) 
 		- [折半插入排序](./sort/selection/binary_insertion)
+		- [2-路插入排序](./sort/selection/two-path_insertion)
+		- [表插入排序](./sort/selection/table_insertion)
 		- [希尔排序](./sort/selection/shell) 
 	* <font size=3 color="green">`交换排序`</font>
 		- [冒泡排序](./sort/exchange/bubble) 
@@ -41,6 +43,7 @@
 		- [直接选择排序](./sort/selection/direct_selection) 
 		- [锦标赛排序](./sort/selection/tournament) 
 		- [堆排序](./sort/selection/heap) 
+		- [树形选择](./sort/tree_selection)
 	* `归并排序`
 		- [二路归并排序](./sort/merge/binary_merge)
 		- [多路归并排序](./sort/mege/mul_merge)
