@@ -7,7 +7,7 @@
 
 - **`比较类排序`**
     - [插入排序](#insertion)</br>
-    - [交换排序](#swap)</br>
+    - [交换排序](#exchange)</br>
     - [选择排序](#selection)</br>
     - [归并排序](#merge)</br>
 
@@ -19,25 +19,25 @@
 
 
 #### <i id="insertion"></i>插入排序  
-- [直接插入排序](./straight_insertion)</br>
-- [折半插入排序](./binary_insertion)</br>
-- [希尔排序](./shell)</br>
+- [直接插入排序](./insertion/straight_insertion)</br>
+- [折半插入排序](./insertion/binary_insertion)</br>
+- [希尔排序](./insertion/shell)</br>
 
 
-#### <i id="swap"></i>交换排序  
-- [冒号排序](./bubble)</br>
-- [快速排序](./quick)</br>
+#### <i id="exchange"></i>交换排序  
+- [冒号排序](./exchange/bubble)</br>
+- [快速排序](./exchange/quick)</br>
 
 
 #### <i id="selection"></i>选择排序  
-- [直接选择排序](./direct_selection)</br>
-- [锦标赛排序](./tournament)</br>
-- [堆排序](./heap)</br>
+- [直接选择排序](./selection/direct_selection)</br>
+- [锦标赛排序](./selection/tournament)</br>
+- [堆排序](./selection/heap)</br>
 
 
 #### <i id="merge"></i>归并排序
-- [二路归并排序](./binary_merge)
-- [多路归并排序](./mul_merge)
+- [二路归并排序](./merge/binary_merge)
+- [多路归并排序](./merge/mul_merge)
 
 
 
