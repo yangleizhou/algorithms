@@ -11,7 +11,7 @@ index :=interpolationSearch(nums,target)
 ```
 
 
-- **`算法来源`**
+- **`算法来源`**  
 插值查找,将[二分查找](../binary_search) mid = low + ((high-low)>>1) 改为 mid = low + (high - low)*(target - a[low])/(a[high] - a[low]),根据查找关键字target 与查找表中最大最小记录关键字比较后的查找方法,核心在于插值计算公式:  
 (target - a[low]) /  (a[high] - a[low])  (target 待查找关键字,数组a有序表)  
 
@@ -26,7 +26,7 @@ index :=interpolationSearch(nums,target)
 
 - **`复杂度`**      
 O(logn)  
-[二分查找时间复杂度](../binary_search/README.md#binary_search_space) 时间复杂度O(logn),插值查询跟[二分查找](../binary_search)不同的地方是 1/2系数。
+[二分查找时间复杂度](../binary_search#binary_search_space) 时间复杂度O(logn),插值查询跟[二分查找](../binary_search)不同的地方是 1/2系数。
 
 - **`适用`**  
 对于数据量较大，关键字`分布比较均匀`的`有序表`来说，采用插值查找, 速度较快.
