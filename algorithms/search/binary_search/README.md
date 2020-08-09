@@ -54,19 +54,19 @@
 
 - **`总结`**    
 
-    - <i id="binary_search"></i>[二分法查找 (binary_search)](./binary_search)  
-        `注意1`：因为初始化   high = len(nums)-1    
-        `注意2`: 所以决定了[搜索区间] 是[low,high],所以 low <= high  
-        `注意4、5`：同时也决定了 low = mid +1 (`注意4`),high = mid - 1 (`注意5`)   
-        `注意3、6`：因为只需要找到一个 target的索引即可,所以当nums[mid] == target 时,立即返回 return mid (`注意3`), 找不到最后返回 -1 (`注意6`)  
+    - <i id="binary_search"></i>[二分法查找 (binary_search)](./binary_search.go)  
+        - `注意1`：因为初始化   high = len(nums)-1    
+        - `注意2`: 所以决定了[搜索区间] 是[low,high],所以 low <= high  
+        - `注意4、5`：同时也决定了 low = mid +1 (`注意4`),high = mid - 1 (`注意5`) 
+        - `注意3、6`：因为只需要找到一个 target的索引即可,所以当nums[mid] == target 时,立即返回 return mid (`注意3`), 找不到最后返回 -1 (`注意6`)  
 
-    - <i id="left_bound"></i>[左边界二分查找 (left_bound_binary_search)](./left_bound_binary_search)  
-        `注意1`：因为初始化   high = len(nums)      
-        `注意2`: 所以决定了[搜索区间] 是[low,high),所以 low < high  
-        `注意4、5`：同时也决定了 low = mid +1 (`注意4`),high = mid  (`注意5`)   
-        `注意3`：因为需要找到 target的最左侧的索引,所以当nums[mid] == target 时，  
+    - <i id="left_bound"></i>[左边界二分查找 (left_bound_binary_search)](./left_bound_binary_search.go)  
+        - `注意1`：因为初始化   high = len(nums)      
+        - `注意2`: 所以决定了[搜索区间] 是[low,high),所以 low < high  
+        - `注意4、5`：同时也决定了 low = mid +1 (`注意4`),high = mid  (`注意5`)   
+        - `注意3`：因为需要找到 target的最左侧的索引,所以当nums[mid] == target 时， 
                 不要立即返回,而是收紧右边界以锁定左侧边界 high = mid (`注意3`)   
-        `注意6`：找最左索引,左侧中小于target个数，就是要找的索引，即low，当查找  
+        - `注意6`：找最左索引,左侧中小于target个数，就是要找的索引，即low，当查找  
                 的目标元素，不再数组元素中，存在两种情况,target<nums[0],小于target 数为0，当target>nums[len(nums)-1],小于target数为len(nums),返回 -1,所以返回值为 return leftBoundReturnCmp(nums,low,target)  
                 exp : var nums []int{1,2,2,4},target=0 或target=5  
                 ![left_bound_binary_search](./left_bound_binary_search.jpg)  
@@ -85,13 +85,14 @@
         }
         ```
 
-    - <i id="right_bound"></i>[右边界二分查找 (right_bound_binary_search)](./right_bound_binary_search)         
-        `注意1`：因为初始化   high = len(nums)      
-        `注意2`: 所以决定了[搜索区间] 是[low,high),所以 low < high  
-        `注意4、5`：同时也决定了 low = mid +1 (`注意4`),high = mid  (`注意5`)   
-        `注意3`：因为需要找到 target的最右侧的索引,所以当nums[mid] == target 时，  
-                不要立即返回,而是收紧左边界以锁定右侧边界 low = mid+1 (`注意3`)   
-        `注意6`：当 nums[mid] = target 时 通过`注意2`中 low= mid+1,返回 low 一定不对，当查找的值存在时一定是 low -1,现在讨论不存在的时候,当target >nums[len(nums) - 1],大于target数为0,当target < nums[0],大于target数为len(nums),都返回 -1;`注意2`循环的退出条件是 low == high ，返回时的low和high相等,所以返回值为 return rightBoundReturnCmp(nums,high,target)
+    - <i id="right_bound"></i>[右边界二分查找 (right_bound_binary_search)](./right_bound_binary_search.go)         
+        - `注意1`：因为初始化   high = len(nums)      
+        - `注意2`: 所以决定了[搜索区间] 是[low,high),所以 low < high  
+        - `注意4、5`：同时也决定了 low = mid +1 (`注意4`),high = mid  (`注意5`)   
+        - `注意3`：因为需要找到 target的最右侧的索引,所以当nums[mid] == target 时，
+                  不要立即返回,而是收紧左边界以锁定右侧边界 low = mid+1 (`注意3`)
+
+        - `注意6`：当 nums[mid] = target 时 通过`注意2`中 low= mid+1,返回 low 一定 不对，当查找的值存在时一定是 low -1,现在讨论不存在的时候,当target >nums[len(nums) - 1],大于target数为0,当target < nums[0],大于target数为len(nums),都返回 -1;`注意2`循环的退出条件是 low == high ，返回时的low和high相等,所以返回值为 return rightBoundReturnCmp(nums,high,target)
 
         ```go 
         func rightBoundReturnCmp(nums []int, high, target int) int {
