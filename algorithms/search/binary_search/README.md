@@ -3,6 +3,7 @@
 - [基本二分查找](#1)
 - [左边界二分查找](#2)
 - [右边界二分查找](#3)
+- [优化方式](#4)
 
 - <i id="1"></i>**`基本二分查找`** 
 
@@ -24,7 +25,7 @@
     2. mid = low+((high-low)>>1),不采用 (low+high) >> 1,避免 low+high 越界
 
 
-    - **`复杂度`**      
+    - <i id="binary_search_space"></i>**`复杂度`**      
     O(logn)  
     计算：
     总共n个元素，依次循环次数 n,n/2,n/4,n/8,....,n/(2^k),k为循环次数 `(n/(2^k) >= 1,最小需要一次 k=log2n)`  
@@ -125,5 +126,11 @@ func (nums []int,target int) {
     return ...  //注意6
 }
 ```
+
+
+- <i id="4"></i>**`优化方式`** 
+    - [插值查找算法](../interpolation_search)  
+    - [斐波那契搜索](../fibonacci_search)  
+
 
     
