@@ -29,3 +29,18 @@ func rightBoundReturnCmp(nums []int, high, target int) int {
 	}
 	return -1
 }
+
+// recursiveRightBoundBinarySearch 递归实现右边界的二分查找
+func recursiveRightBoundBinarySearch(nums []int, low, high, target int) int {
+	if len(nums) == 0 {
+		return -1
+	}
+	if low == high {
+		return rightBoundReturnCmp(nums, high, target)
+	}
+	mid := low + ((high - low) >> 1)
+	if nums[mid] > target {
+		return recursiveRightBoundBinarySearch(nums, low, mid, target)
+	}
+	return recursiveRightBoundBinarySearch(nums, mid+1, high, target)
+}

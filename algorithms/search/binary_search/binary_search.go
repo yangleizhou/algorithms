@@ -12,7 +12,7 @@ func binarySearch(nums []int, target int) int {
 			return mid
 		} else if nums[mid] < target {
 			low = mid + 1
-		} else {
+		} else if nums[mid] > target {
 			high = mid - 1
 		}
 		mid = low + ((high - low) >> 1)
