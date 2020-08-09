@@ -1,5 +1,6 @@
 package search
 
+// binarySearch 二分查找
 func binarySearch(nums []int, target int) int {
 	if len(nums) == 0 {
 		return -1
@@ -19,7 +20,7 @@ func binarySearch(nums []int, target int) int {
 	return -1
 }
 
-// 递归算法实现二分查找
+// recursiveBinarySearch 递归算法实现二分查找
 func recursiveBinarySearch(nums []int, low, high, target int) int {
 	if low > high {
 		return -1

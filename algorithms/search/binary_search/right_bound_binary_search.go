@@ -1,6 +1,6 @@
 package search
 
-// 寻找右边界的二分查找
+// rightBoundBinarySearch 寻找右边界的二分查找
 func rightBoundBinarySearch(nums []int, target int) int {
 	if len(nums) == 0 {
 		return -1
