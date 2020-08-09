@@ -9,7 +9,8 @@
 3. 继续选取第3,4,....n个元素,重复步骤2,选择适当的位置插入。</br>
 
 - **`图解`**  
-![straight_insertion](./straight_insertion.gif)</br>
+![straight_insertion](./straight_insertion.gif)</br>  
+图片来源网络</br>
 
 - **`要点`**  
 设立哨兵current,preIndex，作为临时存储和判断数组边界。
