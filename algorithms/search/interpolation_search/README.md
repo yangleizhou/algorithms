@@ -12,16 +12,16 @@ index :=interpolationSearch(nums,target)
 
 
 - **`算法来源`**  
-插值查找,将[二分查找](../binary_search) mid = low + ((high-low)>>1) 改为 mid = low + (high - low)*(target - a[low])/(a[high] - a[low]),根据查找关键字target 与查找表中最大最小记录关键字比较后的查找方法,核心在于插值计算公式:  
+`插值查找`,将[二分查找](../binary_search) mid = low + ((high-low)>>1) 改为 mid = low + (high - low)*(target - a[low])/(a[high] - a[low]),根据查找关键字target 与查找表中最大最小记录关键字比较后的查找方法,核心在于插值计算公式:  
 (target - a[low]) /  (a[high] - a[low])  (target 待查找关键字,数组a有序表)  
 
 
 
 - **`过程简单描述`**
 1. 判断target,是否在[a[low],a[high]]区间内,是的话根据公式获取mid,否则返回-1。 </br>
-1. 在有序表中，取val = a[mid]作为比较关键字，若给定值与val相等，则查找成功。</br>
-2. 若给定的值小于val，则在mid左半区间继续查找；若给定值大于val，则在mid右半区间继续查找。</br>
-3. 不断重复这个过程，直到查找成功。否则查找失败。</br>  
+2. 在有序表中，取val = a[mid]作为比较关键字，若给定值与val相等，则查找成功。</br>
+3. 若给定的值小于val，则在mid左半区间继续查找；若给定值大于val，则在mid右半区间继续查找。</br>
+4. 不断重复这个过程，直到查找成功。否则查找失败。</br>  
 
 
 - **`复杂度`**      
