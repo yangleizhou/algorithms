@@ -14,17 +14,18 @@ func TestInterpolationSearch(t *testing.T) {
 	if 4 != index {
 		t.Errorf("index should be 4")
 	}
-	fmt.Println("")
 
-	nums = []int{1, 2, 2, 2, 2, 2, 2, 2, 5, 5, 5, 5, 7, 9, 23, 45, 67}
+	nums = []int{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+	target = 1
+	index = interpolationSearch(nums, target)
+	fmt.Println(index)
+
+	nums = []int{1, 2, 2, 2, 2, 2, 2, 2,2,2,2,2,2,2,2,2,2,2,3}
 	target = 2
 
 	index = interpolationSearch(nums, target)
 	fmt.Println(index)
-	if 1 != index {
-		t.Errorf("index should be 1")
-	}
-	fmt.Println("")
+
 
 	nums = []int{1, 2}
 	target = -1

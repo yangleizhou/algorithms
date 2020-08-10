@@ -6,11 +6,14 @@ func interpolationSearch(nums []int, target int) int {
 		return -1
 	}
 	low, high := 0, len(nums)-1
-	mid := low + (high-low)*(target-nums[low])/(nums[high]-nums[low])
 	for low <= high {
+		if nums[low] == target { // 防止元素都相同 被除数为0
+			return low
+		}
 		if target < nums[low] || target > nums[high] { // mid 范围可能不在[0,len(nums)-1]
 			return -1
 		}
+		mid := low + (high-low)*(target-nums[low])/(nums[high]-nums[low])
 		if nums[mid] == target {
 			return mid
 		} else if nums[mid] < target {
@@ -18,7 +21,6 @@ func interpolationSearch(nums []int, target int) int {
 		} else if nums[mid] > target {
 			high = mid - 1
 		}
-		mid = low + (high-low)*(target-nums[low])/(nums[high]-nums[low])
 	}
 	return -1
 }
@@ -32,6 +34,10 @@ func recursiveInterpolationSearch(nums []int, low, high, target int) int {
 	if low > high {
 		return -1
 	}
+	if nums[low] == target {
+		return low
+	}
+
 	if target < nums[low] || target > nums[high] { // mid 范围可能不在[0,len(nums)-1]
 		return -1
 	}
