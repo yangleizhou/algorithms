@@ -57,7 +57,7 @@
 	* <font size=3 color="green">`有序表查找算法`</font>
 		- [二分查找](./search/binary_search)
 		- [插值查找](./search/interpolation_search)
-		- [斐波那契搜索](./search/fabonacci_search)
+		- [斐波那契搜索](./search/fibonacci_search)
 
 	- 树型
 		- 二叉搜索树(Binary Search Tree)
