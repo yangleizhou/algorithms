@@ -53,7 +53,7 @@ https://en.wikipedia.org/wiki/Fibonacci_search_technique
     根据F(k) = F(k-1) + F(k-2) 展开始一颗树
 
 - ## <i id="2"></i> **不依赖数组斐波那契搜索**
-    - 参考 https://www.geeksforgeeks.org/fibonacci-search/
+    - [参考](https://www.geeksforgeeks.org/fibonacci-search/)
 
     - **`观察`**：  
     下面的观察用于范围消除。  
