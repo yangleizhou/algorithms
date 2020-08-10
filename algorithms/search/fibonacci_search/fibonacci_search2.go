@@ -13,10 +13,10 @@ func fibonacciSearch2(nums []int, target int) int {
 		fibMMm1 = fibM
 		fibM = fibMMm2 + fibMMm1
 	}
-
-	var offset = 0
-	for fibM > 0 {
-		i := min(offset+fibMMm2, n)
+	//从前面开始，它标记着以删除的范围
+	var offset = -1
+	for fibM > 1 {
+		i := min(offset+fibMMm2, n-1)
 		if nums[i] < target {
 			fibM = fibMMm1
 			fibMMm1 = fibMMm2

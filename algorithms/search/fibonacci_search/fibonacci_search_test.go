@@ -15,6 +15,11 @@ func TestFibonacciSearch(t *testing.T) {
 		t.Errorf("index should be 4")
 	}
 
+	nums = []int{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+	target = 1
+	index = fibonacciSearch(nums, target)
+	fmt.Println(index)
+
 	nums = []int{1, 2, 2, 2, 2, 2, 2, 5, 5, 5, 5, 5, 7, 7, 7, 7, 9, 23, 45, 67, 88}
 	target = 88
 
