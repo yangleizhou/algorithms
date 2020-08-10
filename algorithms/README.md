@@ -31,10 +31,10 @@
 按问题目标的类型划分
 - <i id="sort"></i>[排序](./sort)
 	* <font size=3 color="green">`插入排序`</font>
-		- [直接插入排序](./sort/selection/straight_insertion) 
-		- [折半插入排序](./sort/selection/binary_insertion)
-		- [2-路插入排序](./sort/selection/two-path_insertion)
-		- [表插入排序](./sort/selection/table_insertion)
+		- [直接插入排序](./sort/insertion/straight_insertion) 
+		- [折半插入排序](./sort/insertion/binary_insertion)
+		- [2-路插入排序](./sort/insertion/two-path_insertion)
+		- [表插入排序](./sort/insertion/table_insertion)
 		- [希尔排序](./sort/selection/shell) 
 	* <font size=3 color="green">`交换排序`</font>
 		- [冒泡排序](./sort/exchange/bubble) 
