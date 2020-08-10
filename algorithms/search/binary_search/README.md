@@ -53,7 +53,6 @@
     - 思路查看总结中 [二分查找法框架](#binary_framework) 和 [右边界二分查找](#right_bound)
 
 
-
 - ## <i id="4"></i>**`总结`**    
 
     - <i id="binary_search"></i>[二分法查找 (binary_search)](./binary_search.go)  
