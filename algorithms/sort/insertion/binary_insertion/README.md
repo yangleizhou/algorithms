@@ -1,20 +1,21 @@
 ## 折半插入排序 binary insertion
 
 - **`定义`** 
-折半插入算法是对[直接插入排序算法](../straight_insertion)的改进，排序原理同[直接插入排序算法](../straight_insertion)，先折半查找元素的应该插入的位置，后统一移动应该移动的元素。 </br>
+折半插入算法是对[直接插入排序算法](../straight_insertion)的改进，排序原理同[直接插入排序算法](../straight_insertion)，先折半查找元素的应该插入的位置 `high + 1`,后统一移动应该移动的元素`(high+1,i]`,最后将元素插入到`high+1`位置。 </br>
 
 
 - **`过程简单描述`**
 1. 从数组第2个元素开始抽取元素。</br>
 2. 把它与左边已经排序好的数组的中间元素进行比较,如果中间元素比它小，那么插入元素属于前半部分,否则属于后半部分,依次不断缩小范围,确定要插入的位置。</br>
-3. 继续选取第3,4,....n个元素,重复步骤2。</br>
+
 
 - **`图解`**  
 ![binary_insertion](./binary_insertion.jpg)</br>  
 图片来源网络</br>
 
 - **`要点`**  
-设立哨兵current,preIndex，作为临时存储和判断数组边界。
+1. 设立变量low = 0,high = i - 1 = preindex (为[直接插入](../straight_insertion/straight_insertion)的`preindex`),在区间内`[low,high]`通过[二分查找法](../../search/binary_search)获取`high` 则区间`[0,high]`都比待比较元素小。</br>
+2. 统一向后移动`(high+1,i]`。</br>
 
 - **`复杂度`**      
 O(n^2)  
