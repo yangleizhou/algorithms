@@ -19,8 +19,8 @@
 #### <i id="insertion"></i>插入排序  
 - [直接插入排序](./insertion/straight_insertion)</br>
 - [折半插入排序](./insertion/binary_insertion)</br>
-- [2-路插入排序](./sort/selection/two-path_insertion)
-- [表插入排序](./sort/selection/table_insertion)
+- [2-路插入排序](./insertion/two-path_insertion)
+- [表插入排序](./insertion/table_insertion)
 - [希尔排序](./insertion/shell)</br>
 
 #### <i id="exchange"></i>交换排序  
