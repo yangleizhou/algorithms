@@ -1,6 +1,6 @@
 package insertion
 
-// 2-路插入排序算法 twoPathInsertionBinary
+// twoPathInsertionBinary 2-路插入排序算法
 func twoPathInsertionBinary(nums []int) []int {
 	if len(nums) == 0 {
 		return nil
@@ -15,17 +15,28 @@ func twoPathInsertionBinary(nums []int) []int {
 		} else if nums[i] >= temp[last] {
 			last++
 			temp[last] = nums[i]
-		} else {
+		} else { //[low,high)
 			low, high := first, last
-			for low <= high {
-				diff := (high - low + n) % n
-				mid := (low + diff>>1) % n
-				if nums[mid] > nums[i] {
-					high = mid - 1
+			for low != high { //first 不一定小于last 用 !=
+				diff := (high - low + n) % n //元素个数
+				mid := (low + (diff / 2)) % n
+				if temp[mid] > nums[i] { // [high,last]一定比nums[i]大，所以但low == high 推出循环是[first,low-1) <=nums[i]<[low=high,last]
+					high = mid // 如果使用high = (mid-1+n) %n  只能保证(high,last] 所以但 low==high 推出循环时 nums[i]与temp[low]大小无法确认
 				} else {
-					low = mid + 1
+					low = (mid + 1) % n //[first,(low-1+n)%n]一定比nums[i]小)
 				}
 			}
+
+			// 移动元素
+			for k := last + 1; k != low; k = (k - 1 + n) % n {
+				temp[k] = temp[(k-1+n)%n]
+			}
+			temp[low] = nums[i]
+			last++
 		}
 	}
+	for i := 0; i < n; i++ {
+		nums[i] = temp[(i+first)%n]
+	}
+	return nums
 }
