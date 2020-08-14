@@ -16,13 +16,17 @@ http://qikan.cqvip.com/Qikan/Article/Detail?id=44696027
         3. 待插入元素大于等于最大元素大, `nums[i] `>=` temp[final]`,变化`final`和`temp[last]`,由于last 不会超过n-1,所以`last = (last+1+n)%n = (last+1)%n = last++`, `temp[last]=nums[i]`。</br>
         4. 待插入元素大于等于最小元素,小于最大元素，即 temp[first]`<=` nums[i] && nums[i] `<` temp[last],则temp在[first,last]区间元素都是有序的,选择适当的策略插入。</br> 
             1. [直接插入排序算法](../straight_insertion)  
+
             ```go
             twoPathInsertionStraight(nums)
             ```
+
             2. [折半插入排序算法](../binary_insertion)
+
             ```go
             twoPathInsertionBinary(nums)
             ```
+
     2. 最后按合适次序赋值回原数组。</br>  
 
     - **`算法来源`**  
@@ -46,12 +50,16 @@ http://qikan.cqvip.com/Qikan/Article/Detail?id=44696027
     3. 对于索引 1`->`n-2，i,j := 1,n-2, 对nums[i]与nums[rstart] 比较大小，小于的插入前半部分,其它插入后半部分。
     4. 对于索引区间[1,n-2]每次插入数据时，可以采用适当策略。
         1. [直接插入排序算法](../straight_insertion)
+
         ```go
         twoPathInsertion2(nums)
         ```
+
         2. [折半插入排序算法](../binary_insertion)
+        
         ```go 
         twoPathInsertioBinary2(nums)
+        ```
 
 
 
