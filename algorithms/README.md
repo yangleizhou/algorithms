@@ -30,7 +30,7 @@
 
 按问题目标的类型划分
 - <i id="sort"></i>[排序](./sort)
-	* <font size=3 color="green">`插入排序`</font>
+	* <font size=3 color="green">[插入排序](./sort/insertion)</font>
 		- [直接插入排序](./sort/insertion/straight_insertion) 
 		- [折半插入排序](./sort/insertion/binary_insertion)
 		- [2-路插入排序](./sort/insertion/two-path_insertion)
