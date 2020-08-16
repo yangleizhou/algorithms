@@ -1,8 +1,17 @@
 ## 链表 linkedlist
 
 - [定义](#1)
-- [链表的结构](#2)
+- [链表的结构](#2)  
+    - [单链表](./single_linkedlist)
+    - [双向链表](./double_linkedlist)
+    - [循环链表](./circular_linkedlist)
+        - [单向循环链表](./circular_linkedlist/single_circular_linkedlist)
+        - [双向循环链表](./circular_linkedlist/double_circular_linkedlist)
+    - [静态链表](./static_linkedlist)
+    - [十字链表](./orthogonal_list)
+    - [跳跃表](./skip_list)
 - [链表优缺点](#3)
+- [链表常规操作](#4)
 
 
 
@@ -39,5 +48,5 @@
         随机访问| O(1) | O(n)  
 
 
-     
+- ## <i id="4"></i>**`链表常规操作`** 
 
