@@ -5,7 +5,7 @@ package linkedlist
 // LinkedList2 单向链表
 type LinkedList2 struct {
 	size uint64 //链表大小
-	head *Node  //头部结点
+	head *Node  //首元结点
 	tail *Node  //尾部结点
 }
 
@@ -44,6 +44,9 @@ func (l *LinkedList2) Insert(i uint64, node *Node) bool {
 	if 0 == i { //是首元结点
 		node.next = l.head
 		l.head = node
+		if l.size == 0 {
+			l.tail = node
+		}
 	} else {
 		pre := l.head
 		j := uint64(1)
@@ -74,7 +77,7 @@ func (l *LinkedList2) Remove(i uint64) bool {
 		node := preNode.next     //找到当前要删除的结点
 		preNode.next = node.next //把当前要删除结点的next赋值给其父节点的next
 		if i == l.size-1 {
-			l.tail = node
+			l.tail = preNode
 		}
 	}
 	l.size--
