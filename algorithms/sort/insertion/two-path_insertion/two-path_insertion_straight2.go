@@ -1,7 +1,7 @@
 package insertion
 
-// twoPathInsertion2  2-路插入排序算法-非循环数组 & 直接插入排序
-func twoPathInsertion2(nums []int) []int {
+// twoPathInsertionStraight2  2-路插入排序算法-非循环数组 & 直接插入排序
+func twoPathInsertionStraight2(nums []int) []int {
 	if len(nums) == 0 {
 		return nil
 	}
