@@ -2,14 +2,8 @@
 
 - [定义](#1)
 - [链表的结构](#2)  
-    - [单链表](./single_linkedlist)
-    - [双向链表](./double_linkedlist)
-    - [循环链表](./circular_linkedlist)
-        - [单向循环链表](./circular_linkedlist/single_circular_linkedlist)
-        - [双向循环链表](./circular_linkedlist/double_circular_linkedlist)
-    - [静态链表](./static_linkedlist)
-    - [十字链表](./orthogonal_list)
-    - [跳跃表](./skip_list)
+    - [线性链表](#21)
+    - [非线性链表](#22)
 - [链表优缺点](#3)
 - [链表常规操作](#4)
 - [golang链表实现](#5)
@@ -20,16 +14,21 @@
 `链表`是一种线性的数据结构,和[数组](../array)不同的是,`链表`不需要一块联系的内存空间,它通过指针将一组零散的内存空间串联起来,是`链式存储`结构一种。
 
 - ## <i id="2"></i>**`链表结构`**  
-    `链表`的结构非常多,常见的有如下：</br>  
+    `链表`的结构非常多,常见的有如下：</br>
+
+    - <i id="21"></i>**`线性链表`**   
+        - [单链表](./single_linkedlist)
+        - [双向链表](./double_linkedlist)
+        - [循环链表](./circular_linkedlist)
+            - [单向循环链表](./circular_linkedlist/single_circular_linkedlist)
+            - [双向循环链表](./circular_linkedlist/double_circular_linkedlist)
     
-    - [单链表](./single_linkedlist)
-    - [双向链表](./double_linkedlist)
-    - [循环链表](./circular_linkedlist)
-        - [单向循环链表](./circular_linkedlist/single_circular_linkedlist)
-        - [双向循环链表](./circular_linkedlist/double_circular_linkedlist)
-    - [静态链表](./static_linkedlist)
-    - [十字链表](./orthogonal_list)
-    - [跳跃表](./skip_list)
+    - <i id="22"></i>**`非线性链表`**  
+        - [静态链表](./static_linkedlist)
+        - [十字链表](./orthogonal_list)
+        - [二叉链表]()
+        - [跳跃表](./skip_list)
+
 
 
 - ## <i id="3"></i>**`优缺点`**  

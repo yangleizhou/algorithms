@@ -20,7 +20,7 @@ func (l *LinkedList) Init() {
 	l.size = 0
 	l.head = &Node{}
 	l.tail = nil
-	l.head.next = l.tail
+	l.head.next = nil
 }
 
 // Append 追加结点 (向后插入)
