@@ -9,7 +9,7 @@ func TestSingleLinkedlist(t *testing.T) {
 	var l = &LinkedList{}
 	l.Init()
 	node1 := &Node{data: 1}
-	l.Append(node1)
+	l.Add(node1)
 	l.Append(&Node{data: 2})
 
 	fmt.Println(l.GetHead().data, l.GetTail().data, l.size)

@@ -1,5 +1,7 @@
 package linkedlist
 
+// 带头结点双向链表
+
 // Node 链表结点
 type Node struct {
 	data int   //数据域
@@ -18,6 +20,7 @@ func (l *LinkedList) Init() {
 	l.size = 0
 	l.head = &Node{}
 	l.tail = nil
+	l.head.next = l.tail
 }
 
 // Append 追加结点 (向后插入)

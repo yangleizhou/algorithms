@@ -1,11 +1,11 @@
 package binary
 
 func majorityElement(nums []int) int {
-	res,count :=nums[0],1
-	for i:= 1;i<len(nums);i++ {
+	res, count := nums[0], 1
+	for i := 1; i < len(nums); i++ {
 		if res == nums[i] {
 			count++
-		}else{
+		} else {
 			count--
 		}
 		if count == 0 {
@@ -13,4 +13,4 @@ func majorityElement(nums []int) int {
 		}
 	}
 	return res
-} 
+}
