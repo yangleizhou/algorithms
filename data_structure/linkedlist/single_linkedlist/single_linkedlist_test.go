@@ -35,9 +35,9 @@ func TestSingleLinkedlist(t *testing.T) {
 	fmt.Println(l.IndexOf(2))
 	fmt.Println(l.Get(0))
 
-	for head := l.GetHead().next; head != nil; head = head.next {
-		fmt.Printf("%v\n", head)
-	}
+	// for head := l.GetHead().next; head != nil; head = head.next {
+	// 	fmt.Printf("%v\n", head)
+	// }
 }
 
 func TestSingleLinkedlistRemove(t *testing.T) {
