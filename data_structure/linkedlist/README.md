@@ -22,9 +22,9 @@
         - [循环链表](./circular_linkedlist)
             - [单向循环链表](./circular_linkedlist/single_circular_linkedlist)
             - [双向循环链表](./circular_linkedlist/double_circular_linkedlist)
+        - [静态链表](./static_linkedlist)
     
     - <i id="22"></i>**`非线性链表`**  
-        - [静态链表](./static_linkedlist)
         - [十字链表](./orthogonal_list)
         - [二叉链表]()
         - [跳跃表](./skip_list)
