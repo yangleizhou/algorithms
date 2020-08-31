@@ -45,11 +45,50 @@ func (L Linkedlist) free(index int) bool {
 	return true
 }
 
+//回收链表到备用链表
+func (L Linkedlist) destroyList() {
+	if L[MAXSIZE-1].cursor == 0 {
+		return
+	}
+	dataIndex := L[MAXSIZE-1].cursor
+	L[MAXSIZE-1].cursor = 0
+	idelHeadIndex := L[0].cursor
+	L[0].cursor = dataIndex
+	if dataIndex > 0 {
+		dataIndex = L[dataIndex].cursor
+	}
+	L[dataIndex].cursor = idelHeadIndex
+}
+
+// 静态链表是否为空
+func (L Linkedlist) isEmpty() bool {
+	if L[MAXSIZE-1].cursor == 0 {
+		return true
+	}
+	return false
+}
+
+// 静态链表长度
+func (L Linkedlist) length() uint64 {
+	i, j := uint64(0), L[MAXSIZE-1].cursor
+	for j > 0 {
+		j = L[j].cursor
+		i++
+	}
+	return i
+}
+
 // Insert 插入结点
 func (L Linkedlist) Insert(data string, index int) bool {
-	if index < 1 || index > MAXSIZE {
+	if index < 0 || index > int(L.length()) {
 		return false
 	}
 
+	curIndex, ok := L.malloc()
+	if !ok {
+		return false
+	}
+	L[curIndex].data = data
+	//https://www.jianshu.com/p/0f05c2fb3d81
 	return true
 }
