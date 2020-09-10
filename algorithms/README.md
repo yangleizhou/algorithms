@@ -58,6 +58,7 @@
 		- [二分查找](./search/binary_search)
 		- [插值查找](./search/interpolation_search)
 		- [斐波那契搜索](./search/fibonacci_search)
+		- [跳跃表](../data_structure/linkedlist/skip_list)
 
 	- 树型
 		- 二叉搜索树(Binary Search Tree)
