@@ -1,10 +1,5 @@
 package insertion
 
-// http://c.biancheng.net/view/3442.html
-// https://blog.csdn.net/zhangkaihang/article/details/7394806
-// https://blog.csdn.net/qq_36183935/article/details/80217487
-// https://www.cnblogs.com/ciyeer/p/9075303.html
-
 // IntMax 最大值
 const IntMax = int(^uint(0) >> 1)
 
