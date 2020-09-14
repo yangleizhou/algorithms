@@ -32,7 +32,17 @@
 
 - ## <i id="4"></i>**`图解`**  
 将无序表{49，38，76，13，27}用表插入排序的方式进行排序，其过程为:
-![link_insertion](./link_insertion.png)</br>  
+```go
+func Init(nums []int) NodeList
+func (nl NodeList) sort()
+```
+![link_insertion](./link_insertion.png)</br> 
+
+在`表插入排序算法`求得的有序表是用链表表示的，也就注定其只能进行顺序查找。而如果想用折半查找的算法，就需要对链表进行再加工，即对链表中的记录进行重新排列，具体做法为：遍历链表，将链表中第 i 个结点移动至数组的第 i 个下标位置中。
+```go
+func (nl NodeList) arrange()
+```
+![link_insertion2](./link_insertion2.png)</br>
 图片来源网络</br>
 
 

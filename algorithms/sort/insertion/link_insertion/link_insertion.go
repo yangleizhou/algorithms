@@ -29,9 +29,41 @@ func Init(nums []int) NodeList {
 }
 
 func (nl NodeList) sort() {
+	var low, high int
+	for i := 2; i < len(nl); i++ {
+		low, high = 0, nl[0].next
+		for nl[high].rc < nl[i].rc {
+			low = high
+			high = nl[high].next
+		}
+		nl[low].next = i
+		nl[i].next = high
+	}
+}
+
+func (nl NodeList) arrange() {
+	p := nl[0].next //p指示第一个记录的当前位置，即还没有排序的最小值
+	for i := 1; i < len(nl); i++ {
+		for p < i { //i之前的都是排好的
+			p = nl[p].next
+		}
+		q := nl[p].next //下一个要排序的记录，p排好就到q了，找第i+1个记录做准备
+		if p != i {     //交换记录，使第i个记录到位
+			nl[p].rc, nl[i].rc = nl[i].rc, nl[p].rc
+			nl[p].next = nl[i].next
+			nl[i].next = p //指向被移走的记录（搬家的记录）
+		}
+		p = q //找第i+1个记录做准备
+	}
 
 }
 
 func linkInsertion(nums []int) []int {
 	nl := Init(nums)
+	nl.sort()
+	nl.arrange()
+	for i := 1; i < len(nl); i++ {
+		nums[i-1] = nl[i].rc
+	}
+	return nums
 }
