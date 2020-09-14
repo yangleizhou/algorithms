@@ -21,8 +21,8 @@ func Init(nums []int) NodeList {
 	var nl NodeList
 	node := Node{IntMax, 1}
 	nl = append(nl, node)
-	for i := 1; i < len(nums); i++ {
-		node = Node{nums[i-1], 0}
+	for i := 1; i <= len(nums); i++ {
+		node = Node{rc: nums[i-1], next: 0}
 		nl = append(nl, node)
 	}
 	return nl
@@ -55,7 +55,6 @@ func (nl NodeList) arrange() {
 		}
 		p = q //找第i+1个记录做准备
 	}
-
 }
 
 func linkInsertion(nums []int) []int {
