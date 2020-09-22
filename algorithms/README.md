@@ -18,6 +18,7 @@
 	
  ## <i id="four"></i>算法  
 
+- [算法复杂度](./0-complexity)
 - [排序](#sort)
 - [查找/搜索](#search)
 - [压缩](#compression)
@@ -36,15 +37,15 @@
 		- [2-路插入排序](./sort/insertion/two-path_insertion)
 		- [表插入排序](./sort/insertion/table_insertion)
 		- [希尔排序](./sort/selection/shell) 
-	* <font size=3 color="green">`交换排序`</font>
+	* <font size=3 color="green">[交换排序](./sort/exchange)</font>
 		- [冒泡排序](./sort/exchange/bubble) 
 		- [快速排序](./sort/exchange/quick) 
-	* <font size=3 color="green">`选择排序`</font>
+	* <font size=3 color="green">[选择排序](./sort/selection)</font>
 		- [直接选择排序](./sort/selection/direct_selection) 
 		- [锦标赛排序](./sort/selection/tournament) 
 		- [堆排序](./sort/selection/heap) 
 		- [树形选择](./sort/selection/tree_selection)
-	* `归并排序`
+	* <font size=3 color="green">[归并排序](./sort/merge)</font>
 		- [二路归并排序](./sort/merge/binary_merge)
 		- [多路归并排序](./sort/mege/mul_merge)
 
