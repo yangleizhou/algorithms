@@ -1,5 +1,9 @@
 package exchange
 
+import (
+	insertion "github.com/yangleizhou/algorithms/algorithms/sort/insertion/binary_insertion"
+)
+
 func quickSortOneWay(nums []int, low, high int) {
 	if low < high {
 		//pivotIndex := oneWayPartition(nums, low, high, FixFirstPivot)
@@ -63,8 +67,53 @@ func quickSortMedianOptimizeHoare(nums []int, low, high int) {
 // 三路 快排
 func quickSortThreeWay(nums []int, low, high int) {
 	if low < high {
+		//lt, gt := threeWayPartition(nums, low, high, FixFirstPivot)
+		//lt, gt := threeWayPartition(nums, low, high, FixLastPivot)
+		//lt, gt := threeWayPartition(nums, low, high, RandPivot)
 		lt, gt := threeWayPartition(nums, low, high, MedianThreePivot)
-		quickSortMedianOptimizeHoare(nums, low, lt)
-		quickSortMedianOptimizeHoare(nums, gt, high)
+		quickSortThreeWay(nums, low, lt)
+		quickSortThreeWay(nums, gt, high)
+	}
+}
+
+// 快排优化  序列长度达到一定大小时，使用插入排序
+// 以三路快排和折半插入为例
+func quickSortOptimizeInsertion(nums []int, low, high int) {
+	if high-low+1 < 10 {
+		insertion.BinaryInsertion(nums, low, high)
+		return
+	}
+	if low < high {
+		//lt, gt := threeWayPartition(nums, low, high, FixFirstPivot)
+		//lt, gt := threeWayPartition(nums, low, high, FixLastPivot)
+		//lt, gt := threeWayPartition(nums, low, high, RandPivot)
+		lt, gt := threeWayPartition(nums, low, high, MedianThreePivot)
+		quickSortOptimizeInsertion(nums, low, lt)
+		quickSortOptimizeInsertion(nums, gt, high)
+	}
+}
+
+// 快排优化 尾递归
+// 以三路快排为例
+func quickSortOptimizeTailRecursive(nums []int, low, high int) {
+	if high-low+1 < 10 {
+		insertion.BinaryInsertion(nums, low, high)
+		return
+	}
+	for low < high { //迭代控制 low
+		//lt, gt := threeWayPartition(nums, low, high, FixFirstPivot)
+		//lt, gt := threeWayPartition(nums, low, high, FixLastPivot)
+		//lt, gt := threeWayPartition(nums, low, high, RandPivot)
+		lt, gt := threeWayPartition(nums, low, high, MedianThreePivot)
+		quickSortOptimizeTailRecursive(nums, low, lt)
+		low = gt
+	}
+}
+
+// 快排优化 聚集元素
+func quickSortOptimizeGatherElements(nums []int, low, high int) {
+	if high-low+1 < 10 {
+		insertion.BinaryInsertion(nums, low, high)
+		return
 	}
 }
