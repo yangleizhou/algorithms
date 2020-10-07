@@ -12,7 +12,7 @@
             "remotePath": "",
             "port": 2345,
             "host": "127.0.0.1",
-            "program": "${fileDirname}/algorithms/data_structure/linedlist/static_linkedlist/static_linkedlist_test.go",
+            "program": "${fileDirname}/algorithms/algorithms/sort/insertion/shell/shell_test.go",
             "env": {},
             "args": [],
             "showLog": true
