@@ -5,5 +5,4 @@
 - [直接选择排序](./direct_selection) 
 - [锦标赛排序](./tournament)
 - [堆排序](./heap)
-- [树形选择](./tree_selection)
 

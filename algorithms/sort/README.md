@@ -30,9 +30,8 @@
 
 #### <i id="selection"></i>选择排序  
 - [直接选择排序](./selection/direct_selection)</br>
-- [锦标赛排序](./selection/tournament)</br>
+- [锦标赛排序(又称树形选择排序)](./selection/tournament)</br>
 - [堆排序](./selection/heap)</br>
-- [树形选择](./selection/tree_selection)
 
 
 #### <i id="merge"></i>归并排序

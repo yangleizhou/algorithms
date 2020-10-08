@@ -1,6 +1,8 @@
 算法学习
 =====================================
 
+//https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
 - [认识](#zero)
 - [算法](#four)
 - [结构](#three)
@@ -42,9 +44,8 @@
 		- [快速排序](./sort/exchange/quick) 
 	* <font size=3 color="green">[选择排序](./sort/selection)</font>
 		- [直接选择排序](./sort/selection/direct_selection) 
-		- [锦标赛排序](./sort/selection/tournament) 
+		- [锦标赛排序(又称树形选择排序)](./sort/selection/tournament) 
 		- [堆排序](./sort/selection/heap) 
-		- [树形选择](./sort/selection/tree_selection)
 	* <font size=3 color="green">[归并排序](./sort/merge)</font>
 		- [二路归并排序](./sort/merge/binary_merge)
 		- [多路归并排序](./sort/mege/mul_merge)
