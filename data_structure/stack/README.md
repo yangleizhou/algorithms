@@ -5,7 +5,7 @@
 - [栈实现](#3)
 - [栈的应用](#4)
 
-
+https://www.cnblogs.com/open-yang/p/11366985.html
 https://www.cnblogs.com/gpan/p/9836119.html
 
 - ## <i id="1"></i>**`定义`**
