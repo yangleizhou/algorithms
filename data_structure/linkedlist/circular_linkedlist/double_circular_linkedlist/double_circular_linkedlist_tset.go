@@ -1,4 +1,4 @@
-package linkedlist
+package dclinkedlist
 
 import "testing"
 

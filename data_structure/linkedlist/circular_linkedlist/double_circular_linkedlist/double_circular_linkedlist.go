@@ -1,4 +1,4 @@
-package linkedlist
+package dclinkedlist
 
 import "fmt"
 
@@ -7,6 +7,16 @@ type Node struct {
 	data int
 	next *Node
 	pre  *Node
+}
+
+// NewNode 获取新结点
+func NewNode(v int) *Node {
+	return &Node{data: v}
+}
+
+//GetData 获取数值
+func (n *Node) GetData() int {
+	return n.data
 }
 
 // LinkedList 双向循环链表
