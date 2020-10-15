@@ -27,6 +27,9 @@
 
 - ## <i id="4"></i>**`栈的应用`** 
 1. 进制转换
+   ```go
+   func DecimalToAny(src int, baseType int)
+   ```
 2. 平衡符号
 3. 计算后缀表达式
 4. 中缀表达式转后缀表达
