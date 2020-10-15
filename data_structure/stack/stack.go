@@ -14,6 +14,7 @@ type IStack interface {
 }
 
 type compFunc func(v1, v2 interface{}) bool
+type gainValueFunc func(v1, v2 interface{}) interface{}
 
 // sortStack 栈排序
 func sortStack(s IStack, comp compFunc) {
@@ -31,6 +32,20 @@ func sortStack(s IStack, comp compFunc) {
 	}
 }
 
-func compareInt(v1, v2 interface{}) bool {
+// 大于
+func compareIntGt(v1, v2 interface{}) bool {
 	return v1.(int) > v2.(int)
+}
+
+// 小于等于
+func compareIntLtorEt(v1, v2 interface{}) bool {
+	return v1.(int) <= v2.(int)
+}
+
+// 获取较小值
+func gainIntMin(v1, v2 interface{}) interface{} {
+	if v1.(int) < v2.(int) {
+		return v1
+	}
+	return v2
 }

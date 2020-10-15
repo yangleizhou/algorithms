@@ -10,6 +10,6 @@ func TestSortStack(t *testing.T) {
 	var v = []int{5, 4, 9, 5, 8, 7, 7, 48}
 	fmt.Println(v)
 	IStack.Pushs(v)
-	sortStack(IStack, compareInt)
+	sortStack(IStack, compareIntGt)
 	fmt.Println(IStack.Pops())
 }

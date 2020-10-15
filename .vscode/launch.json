@@ -8,11 +8,13 @@
             "name": "Launch",
             "type": "go",
             "request": "launch",
-            "mode": "debug",
+            //"mode": "debug",  //使用debug时 调试测试单元无法使用
+            "mode": "auto", //调试测试单元test program配置使用  "program": "${fileDirname}",
+                            //如果不是单元测试 启动服务(含main.go) "program": "${workspaceFolder}/main.go", 
             "remotePath": "",
             "port": 2345,
             "host": "127.0.0.1",
-            "program": "${fileDirname}/algorithms/algorithms/sort/insertion/shell/shell_test.go",
+           "program": "${fileDirname}",
             "env": {},
             "args": [],
             "showLog": true

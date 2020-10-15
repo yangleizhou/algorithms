@@ -12,6 +12,7 @@ type (
 	node struct {
 		value interface{}
 		prev  *node
+		min   interface{} //最小栈使用
 	}
 )
 
@@ -51,7 +52,7 @@ func (s *LinkedStack) Pop() interface{} {
 
 // Push 入栈
 func (s *LinkedStack) Push(v interface{}) {
-	n := &node{v, s.top}
+	n := &node{value: v, prev: s.top}
 	s.top = n
 	s.length++
 }
@@ -78,4 +79,34 @@ func (s *LinkedStack) Pops() (v []interface{}) {
 		v = append(v, s.Pop())
 	}
 	return v
+}
+
+// PushMinStack 最小栈 入栈
+//==================================================================
+func (s *LinkedStack) PushMinStack(v interface{}, gains ...gainValueFunc) {
+	n := &node{value: v, prev: s.top, min: s.min(v, gains...)}
+	s.top = n
+	s.length++
+}
+
+// GetMin 获取最小值
+func (s *LinkedStack) GetMin() interface{} {
+	if s.IsEmpty() {
+		return nil
+	}
+	return s.top.min
+}
+
+// 获取两者中最小值
+func (s *LinkedStack) min(v interface{}, gains ...gainValueFunc) interface{} {
+	if s.length == 0 {
+		return v
+	}
+	var gain gainValueFunc
+	if len(gains) != 0 {
+		gain = gains[0]
+	} else {
+		gain = gainIntMin
+	}
+	return gain(v, s.top.min)
 }
