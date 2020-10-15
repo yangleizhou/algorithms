@@ -55,3 +55,27 @@ func (s *LinkedStack) Push(v interface{}) {
 	s.top = n
 	s.length++
 }
+
+// Pushs 批量入栈
+func (s *LinkedStack) Pushs(v ...interface{}) {
+	if len(v) == 0 {
+		return
+	}
+	for i := 0; i < len(v); i++ {
+		switch v[i].(type) {
+		case []int:
+			vs := v[i].([]int)
+			for i := range vs {
+				s.Push(vs[i])
+			}
+		}
+	}
+}
+
+// Pops 出栈所有
+func (s *LinkedStack) Pops() (v []interface{}) {
+	for s.Size() != 0 {
+		v = append(v, s.Pop())
+	}
+	return v
+}
