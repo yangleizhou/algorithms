@@ -41,10 +41,12 @@
         1. SortedStack栈为空，直接压入；
         2. SortedStack栈非空，且curElement <= SortedStack.peek()，将curELement压入；
         3. SortedStack栈非空，但curElement > SortedStack.peek()，此时需要持续弹出SortedStack栈的顶元素直至元素curElement <= SortedStack栈最新的顶元素
+        4. 通过node结点增加min元素，入栈时条件性判断是否加入
 2. 最小栈实现
     - 要求:获取最小元素功能的时间复杂度O(1)
     - 分析:在O(1)时间复杂度获取一个序列极值的数据结构：有序数组，哈希表，最大(小)堆。
            我们可以尝试构造上面提及的三种数据结构来实现最小元素获取功能，但这个“构造的过程”明显会引入额外的时间复杂度。
+    - 思路:基于上述两方面分析，结合元素进栈/出栈操作，这里我们尝试采用一个辅助栈(MinStack)配合原始栈(MainStack)实现算法        需要的新特性。其时间复杂度为O(1)，空间复杂度为O(n)。
 
 3. 用栈实现队列
 4. 递归实现一个栈的逆序
