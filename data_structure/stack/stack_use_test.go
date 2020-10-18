@@ -26,3 +26,9 @@ func TestStackUseDecimalToAny(t *testing.T) {
 	fmt.Println()
 	fmt.Println()
 }
+
+func TestBalanceSymbol(t *testing.T) {
+	IStack := NewLinkedStack()
+	var chars = []rune{'(', '{', '[', ']', '}', ')'}
+	fmt.Println(BalanceSymbol(IStack, chars))
+}
