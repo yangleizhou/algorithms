@@ -13,3 +13,6 @@ func DecimalToAny(src int, baseType int) {
 		fmt.Printf("%d", IStack.Pop())
 	}
 }
+
+// BalanceSymbol 平衡符号
+func BalanceSymbol(str string)
