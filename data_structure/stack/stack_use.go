@@ -15,4 +15,39 @@ func DecimalToAny(src int, baseType int) {
 }
 
 // BalanceSymbol 平衡符号
+<<<<<<< HEAD
 func BalanceSymbol(str string)
+=======
+func BalanceSymbol(s IStack, chars []rune) bool {
+	if s == nil || len(chars) == 0 {
+		return false
+	}
+	for index := range chars {
+		c := chars[index]
+		switch c {
+		case '[', '{', '(':
+			s.Push(c)
+		case ']', '}', ')':
+			v := s.Pop()
+			if v == nil {
+				return false
+			}
+			return balanceSymbolJudge(c, v.(rune))
+		default:
+		}
+	}
+	return true
+}
+
+func balanceSymbolJudge(char, src rune) bool {
+	switch char {
+	case '(':
+		return src == ')'
+	case '}':
+		return src == '{'
+	case ']':
+		return src == '['
+	}
+	return false
+}
+>>>>>>> 663e06e0e9e92916c82e0484dcb28eadf71b56a5
