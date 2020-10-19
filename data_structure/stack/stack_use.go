@@ -15,9 +15,6 @@ func DecimalToAny(src int, baseType int) {
 }
 
 // BalanceSymbol 平衡符号
-<<<<<<< HEAD
-func BalanceSymbol(str string)
-=======
 func BalanceSymbol(s IStack, chars []rune) bool {
 	if s == nil || len(chars) == 0 {
 		return false
@@ -50,4 +47,3 @@ func balanceSymbolJudge(char, src rune) bool {
 	}
 	return false
 }
->>>>>>> 663e06e0e9e92916c82e0484dcb28eadf71b56a5
