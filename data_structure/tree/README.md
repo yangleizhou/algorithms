@@ -36,6 +36,7 @@
         - 完全二叉树：有2^k - 1 个节点的满二叉树称为完全二叉树
         - 二叉搜索树(Binary Search Tree)：
         - 平衡二叉搜索树(AVL Tree):
+        - 线段树(Segment Tree):
         - 红黑树(Red-Black Tree):
         - 伸展树(Splay Tree):
         - 字典树/前缀树(Trie Tree,Prefix Tree, 26-ary Tree):
