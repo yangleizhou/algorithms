@@ -51,7 +51,7 @@
             3. 满二叉树中不存在度为1的节点，每一个分支点中都两颗深度相同的子树，且叶子节点都在最底层
             4. 具有n个节点的满二叉树的深度为log(n+1)
         - [完全二叉树](./complete_binary_tree)(Complete Binary Tree)：  
-            对于深度为K的，有n个结点的二叉树，当且仅当其每一个结点都与深度为K的满二叉树中编号从1至n的结点一一对应时称之为完全二叉树;如果一棵二叉树是满二叉树, 则它必定是完全二叉树。
+            对于深度为K的，有n个结点的二叉树，当且仅当其每一个结点都与深度为K的满二叉树中编号从1至n的结点一一对应时称之为完全二叉树;如果一棵二叉树是[满二叉树](./full_binary_tree), 则它必定是完全二叉树。
             ![complete_binary_tree](./complete_binary_tree/complete_binary_tree.png)
             性质：
             1. 具有n个结点的完全二叉树的深度[logk]+1
@@ -61,26 +61,38 @@
                 - 如果2*i+1>n,则结点i无右孩子,否则其右孩子rchild(i)是结点2*i+1
             3. 叶子结点只能出现在最下层和次下层,且最下层的叶子结点集中在树的左部。
         - [二叉搜索树/二叉搜索树](./binary_search_tree)(Binary Search Tree)：  
+            ![binary_search_tree](./binary_search_tree/binary_search_tree.png)
             它或是一颗空树，或者是具有下列性质的二叉树
             1. 若任意节点的左子树不空，则左子树上所有节点的值均小于它的根节点的值；
             2. 若任意节点的右子树不空，则右子树上所有节点的值均大于它的根节点的值；
             3. 任意节点的左、右子树也分别为二叉查找树；
             4. 没有键值相等的节点。
         - [平衡二叉搜索树](./avl_tree)(AVL Tree):
-            它是一 棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树，同时，平衡二叉树必定是二叉搜索树。
-        - [线段树](./segment_tree)(Segment Tree):
+            它是一 棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树，同时，平衡二叉树必定是[二叉搜索树](./binary_search_tree)。
+            ![./avl_tree](./avl_tree/avl_tree.jpg)
+        - [伸展树/分裂树](./splay_tree)(Splay Tree):  
+            伸展树是一种[二叉查找树](./binary_search_tree)，它能在O(logn)内完成插入、查找和删除操作。
+            伸展树是一种自调整形式的[二叉查找树](./binary_search_tree)，它会沿着从某个节点到树根之间的路径，通过一系列的旋转把这个节点搬移到树根去。
+            它的优势在于不需要记录用于平衡树的冗余信息。
+            ![splay_tree](./splay_tree/splay_tree.jpg)
+        - [线段树](./segment_tree)(Segment Tree):  
+            线段树是一种[二叉搜索树](./binary_search_tree)，与区间树相似，它将一个区间划分成一些单元区间，每个单元区间对应线段树中的一个叶结点
+            ![segment_tree](./segment_tree/segment_tree.png)
         - [红黑树](./red_black_tree)(Red-Black Tree):  
-            红黑树是一颗特殊的二叉查找树，除了二叉查找树的要求外，它还具有以下特性：
+            红黑树是一颗特殊的[二叉查找树](./binary_search_tree)，除了[二叉查找树](./binary_search_tree)的要求外，它还具有以下特性：
             ![read_black_tree](./read_black_tree/read_black_tree.png)
             1. 每个节点或者是黑色，或者是红色
             2. 根节点是黑色
             3. 每个叶子节点(NIL)是黑色[注意:这里叶子节点，是指为空（NIL 或NULL）的叶子节点]
             4. 如果一个节点是红色的，则它的子节点必须是黑色的
             5. 从一个节点到该节点的子孙节点的所有路径上包含相同数目的黑节点
-        - [哈(霍)夫曼树](./huffman_tree)（最优二叉树 Huffman Tree）：  
+        - [霍(哈)夫曼树](./huffman_tree)（最优二叉树 Huffman Tree）：  
             带权路径最短的二叉树称为哈夫曼树或最优二叉树
-        - [伸展树](./splay_tree)(Splay Tree):
-        - [字典树/前缀树](./trie_tree)(Trie Tree,Prefix Tree, 26-ary Tree):
+            ![huffman_tree](./huffman_tree/huffman_tree.jpg)
+        - [字典树/前缀树](./trie_tree)(Trie Tree,Prefix Tree, 26-ary Tree):  
+            Trie树，即字典树，又称单词查找树或键树，是一种树形结构，是一种哈希树的变种。  
+            典型应用是用于统计和排序大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计。  
+            优点是：最大限度地减少无谓的字符串比较。
         - [基数树/压缩前缀树](./radix_tree)(Radix Tree,Compact Tree):
         - [三元搜索树](./ternary_tree)(Ternary Search Tree,Trie With BST Of Children):
         - [B Tree](./b_tree)(Balance Tree 平衡多路搜索树):  
